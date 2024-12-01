@@ -4,6 +4,10 @@
 //
 //  Created by Luiz Felipe Aparecido do Couto on 30/11/24.
 //
+//base é o estilo do card
+//onTapGesture é a ação do card
+// let é uma constante
+//var é uma variável
 
 import SwiftUI
 
@@ -50,8 +54,9 @@ struct CardView: View{
                 
             }
             
+            
         }
-        
+
         .onTapGesture {
             
             isFaceUp.toggle()
