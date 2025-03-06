@@ -28,7 +28,7 @@ struct AspectVGrid<Item: Identifiable, ItemView: View>: View {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: gridItemSize), spacing: 0)], spacing: 0) {
                 ForEach(items) { item in
                     content(item)
-                    .aspectRatio(aspectRatio, contentMode: .fit)
+                        .aspectRatio(aspectRatio, contentMode: .fit)
                 }
             }
         }
@@ -52,6 +52,6 @@ struct AspectVGrid<Item: Identifiable, ItemView: View>: View {
             columnCount += 1
         }while columnCount < count
         return min(size.width / count, size.height * aspectRatio).rounded(.down)
-
+        
     }
 }

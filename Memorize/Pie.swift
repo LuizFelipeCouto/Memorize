@@ -29,11 +29,11 @@ struct Pie: Shape {
         p.move(to: center)
         p.addLine(to: start)
         p.addArc(
-                center: center,
-                radius: radius,
-                startAngle: startAngle,
-                endAngle: endAngle,
-                clockwise: !clockwise
+            center: center,
+            radius: radius,
+            startAngle: startAngle,
+            endAngle: endAngle,
+            clockwise: !clockwise
         )
         p.addLine(to: center)
         return p
